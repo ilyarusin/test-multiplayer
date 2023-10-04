@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Player : MonoBehaviour
@@ -38,5 +39,12 @@ public class Player : MonoBehaviour
         rb.velocity = Vector3.ClampMagnitude(directionVector, 1) * speed;
     }
 
-    
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Portal"))
+        {
+            Debug.Log("OK");
+            SceneManager.LoadScene("Multiplayer");
+        }
+    }
 }
