@@ -21,10 +21,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        /*
-        if (!base.IsOwner)
-            return;
-        */
 
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
@@ -39,12 +35,5 @@ public class Player : MonoBehaviour
         rb.velocity = Vector3.ClampMagnitude(directionVector, 1) * speed;
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.gameObject.CompareTag("Portal"))
-        {
-            Debug.Log("OK");
-            SceneManager.LoadScene("Multiplayer");
-        }
-    }
+    
 }

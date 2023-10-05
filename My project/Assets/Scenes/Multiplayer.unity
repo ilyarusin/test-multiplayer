@@ -307,7 +307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9f6ec51ddc14f908f5acc0cd0423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 229471198577316126, guid: b5cb77fdc01295a48b6ea30e0f2d6506, type: 3}
+  _playerPrefab: {fileID: -897005667602972570, guid: 24eec81d9ca2fd84a8ffb361061ff328, type: 3}
   _addToDefaultScene: 1
   Spawns:
   - {fileID: 1280050620}
